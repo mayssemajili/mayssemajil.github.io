@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">البريد الإلكتروني</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">كلمة السر</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">إرسال</button>
+  </form>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">نظام شمسي</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الكواكب</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المزيد</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إبداء رأيك في الموقع</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Système Solaire</title>
+    
+        <!-- Intégration de Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJv3X2M6eD3cW0dV8dXnU93rA4jKNvZjZq4fA1lHpZr6c4l5ql6czdZmQY/J" crossorigin="anonymous">
+        
+        <!-- Votre feuille de style personnalisée (si vous en avez) -->
+        <link rel="stylesheet" href="externe.css">
+    </head>
+</head>
+<body>
+    <header>
+        <h1>إبداء رأيك في الموقع</h1>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>من فضلك، شاركنا رأيك حول الموقع</h2>
+            <form action="#" method="POST">
+                <!-- Prénom -->
+                <label for="firstName">الاسم الأول:</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="أدخل اسمك الأول"><br><br>
+
+                <!-- Nom -->
+                <label for="lastName">الاسم العائلي:</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="أدخل اسمك العائلي"><br><br>
+
+                <!-- Date de naissance -->
+                <label for="birthdate">تاريخ الميلاد:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+                <!-- Genre -->
+                <label for="gender">الجنس:</label><br>
+                <input type="radio" id="male" name="gender" value="ذكر" required>
+                <label for="male">ذكر</label><br>
+                <input type="radio" id="female" name="gender" value="أنثى">
+                <label for="female">أنثى</label><br><br>
+
+                <!-- Email -->
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني"><br><br>
+
+                <!-- Gouvernorat -->
+                <label for="governorate">المحافظة:</label>
+                <select id="governorate" name="governorate" required>
+                    <option value="">اختر المحافظة</option>
+                    <option value="Tunis">تونس</option>
+                    <option value="Ariana">أريانة</option>
+                    <option value="Beja">باجة</option>
+                    <option value="Ben Arous">بن عروس</option>
+                    <option value="Bizerte">بنزرت</option>
+                    <option value="Gabes">قابس</option>
+                    <option value="Gafsa">قفصة</option>
+                    <option value="Jendouba">جندوبة</option>
+                    <option value="Kairouan">القيروان</option>
+                    <option value="Kasserine">القصرين</option>
+                    <option value="Kebili">قبلي</option>
+                    <option value="Kef">الكاف</option>
+                    <option value="Mahdia">المهدية</option>
+                    <option value="Manouba">منوبة</option>
+                    <option value="Medenine">مدنين</option>
+                    <option value="Monastir">المهدية</option>
+                    <option value="Nabeul">نابل</option>
+                    <option value="Sfax">صفاقس</option>
+                    <option value="Sidi Bouzid">سيدي بوزيد</option>
+                    <option value="Siliana">سليانة</option>
+                    <option value="Sousse">سوسة</option>
+                    <option value="Tataouine">تطاوين</option>
+                    <option value="Tozeur">توزر</option>
+                    <option value="Zaghouan">زغوان</option>
+                </select><br><br>
+
+                <!-- Avis -->
+                <label for="feedback">رأيك في الموقع:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required placeholder="أدخل رأيك هنا"></textarea><br><br>
+
+                <!-- Note -->
+                <label for="rating">التقييم (من 1 إلى 5):</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+                <!-- Soumettre le formulaire -->
+                <input type="submit" value="إرسال">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 موقع النظام الشمسي. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
